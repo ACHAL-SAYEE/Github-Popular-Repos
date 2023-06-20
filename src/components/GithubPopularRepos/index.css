@@ -1,0 +1,14 @@
+.bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.languages{
+display: flex;
+list-style-type: none;
+}
+.repositories{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
