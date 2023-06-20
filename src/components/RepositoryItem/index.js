@@ -6,28 +6,28 @@ const RepositoryItem = props => {
   return (
     <li className="item">
       <img src={avatarUrl} alt={name} className="img" />
-      <p>{name}</p>
+      <h1>{name}</h1>
       <ul>
-        <li className="count">
+        <li className="count" key="1">
           <img
             src="https://assets.ccbp.in/frontend/react-js/stars-count-img.png "
-            alt=""
+            alt="stars"
             className="count-img"
           />
           <p>{starsCount} stars</p>
         </li>
-        <li className="count">
+        <li className="count" key="2">
           <img
             src="https://assets.ccbp.in/frontend/react-js/forks-count-img.png "
-            alt=""
+            alt="forks"
             className="count-img"
           />
           <p>{forksCount} forks</p>
         </li>
-        <li className="count">
+        <li className="count" key="3">
           <img
             src="https://assets.ccbp.in/frontend/react-js/issues-count-img.png "
-            alt=""
+            alt="open issues"
             className="count-img"
           />
           <p>{issuesCount} open issues</p>
